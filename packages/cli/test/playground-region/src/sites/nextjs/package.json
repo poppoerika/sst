@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "sst-env -- next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "socket patch apply --silent --ecosystems npm"
   },
   "dependencies": {
     "@serverless-stack/static-site-env": "file:../../../../../../static-site-env",
